@@ -27,14 +27,14 @@ public class FibonacciRecursive {
         int aranan=sc.nextInt();
         
         long startTime = System.nanoTime();//zamanı hesaplamaya başlıyoruz.
-        //zamanını hesaplamak istediğimiz işlemleri bu kızma yazıyoruz. 
+        //zamanını hesaplamak istediğimiz işlemleri bu kısma yazıyoruz. 
         for (long i = 0; i <= aranan; i++) //Bu döngü sayesinde istediğimiz sayıda fibonacci sayısı üretebiliriz.
         {
             System.out.printf("\n"+fibonacci(i));
         }
         
         long endTime = System.nanoTime();//hesaplamayı bitiriyoruz.
-        long estimatedTime = endTime - startTime; // Geçen süreyi milisaniye cinsinden elde ediyoruz.
+        long estimatedTime = endTime - startTime; // Geçen süreyi nanosaniye cinsinden elde ediyoruz.
         double seconds = (double)estimatedTime/1000000000; // saniyeye çevirmek için 1000000000'e bölüyoruz.
         System.out.println("\n"+seconds);
   }
